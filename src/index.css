@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background: #1976d2;
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #1976d2;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #115293;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.success {
+  color: green;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .page {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
